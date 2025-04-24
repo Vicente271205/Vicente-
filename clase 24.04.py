@@ -134,7 +134,14 @@ if __name__=="__main__":
 
 --------------------
 
-archivo= open("C:\Users\Labo\Desktop\consumo_bandwidth.log")
+archivo= open("C:\Users\Labo\Desktop\consumo_bandwidth.log", "r")
 contenido = archivo.read()
 print(contenido)
 archivo.close()
+
+#############
+
+archivo = open ("C:\Users\Labo\Desktop\consumo_bandwidth.log", "w")
+archivo.write("Hola chicos")
+archivo.close()
+
